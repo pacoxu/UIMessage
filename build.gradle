@@ -1,0 +1,44 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.5
+
+version = '1.0'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version
+    }
+}
+
+	repositories {
+		flatDir(dirs: "lib") 
+	}
+	
+	dependencies  {
+		compile('org.apache.lucene:lucene-core:3.6.0')
+		compile('org.apache.lucene:lucene-spellchecker:3.6.0')
+	}
+
+configurations {
+	lucene
+}
+
+
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'src'
+       }
+    }
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+            srcDir 'build/generated/src'
+        }
+    }
+}

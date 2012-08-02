@@ -1,0 +1,24 @@
+﻿task compileJava(type: Compile, overwrite: true, dependsOn: [compileJaxbJava]) {
+	source = files(sourceSets.main.java, sourceSets.test.java)
+    classpath = files(sourceSets.main.compileClasspath, sourceSets.jaxb.output.classesDir,
+            project.configurations.aspectj,
+			project.configurations.dfc,
+            project.configurations.compile)
+    destinationDir = sourceSets.main.output.classesDir
+    options.encoding = 'ISO-8859-1'
+    options.debug = compiler_debug
+    options.fork = true
+    options.fork(memoryMaximumSize: compiler_max_memory)
+    options.deprecation = true
+    //options.compilerArgs = [compiler_args]
+    options.warnings = compiler_generate_no_warnings
+    //options.bootClasspath = indexserver_module_bootclasspath
+    doLast {
+        copy {
+            from sourceSets.main.java.srcDirs
+            into sourceSets.main.output.classesDir
+            includes = ['**/?*.xq', '**/?*.properties', '**/?*.xml', '**/?*.gif', '**/?*.png', '**/?*.jpeg', '**/?*.jpg', '**/?*.html', '**/?*.dtd', '**/?*.tld', '**/?*.xsd', '**/?*.index']
+        }
+    }
+
+}

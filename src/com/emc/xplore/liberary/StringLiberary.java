@@ -20,7 +20,7 @@ import org.apache.lucene.util.Version;
 public class StringLiberary {
 	
 	public static String microsoftResourceStirngsFilePath = "Microsoft Resource Strings.txt";
-	public static String microsoftResourceStirngsPlainDictionary = "MicroStringsDict.txt";
+	public static String microsoftResourceStirngsPlainDictionary = "dics/MicroStringsDict.txt";
 	public static String dictionaryPath = "dict";
 	
 	public void createStringLiberary() throws IOException{

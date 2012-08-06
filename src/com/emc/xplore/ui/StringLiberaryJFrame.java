@@ -151,7 +151,7 @@ public class StringLiberaryJFrame {
 		//new Container for Liberary Management
 		Container bottom = new Container();
 		
-		bottom.setLayout(new GridLayout(2,1));
+		bottom.setLayout(new GridLayout(3,1));
 
 		
 		Container bottom1 = new Container();
@@ -242,10 +242,31 @@ public class StringLiberaryJFrame {
 		add.setVisible(true);
 		bottom2.setVisible(true);
 		
-		bottom.add(bottom1 , 0 , 0);
-		bottom.add(bottom2 , 1 , 1);
+		Container bottom3 = new Container();
+		bottom3.setLayout(new FlowLayout());
 
+		Button reindex = new Button( "Reindex!" );
+		reindex.addActionListener(new ActionListener()  
+	        {  
+				@Override
+	            public void actionPerformed(ActionEvent ae)  
+	            {  
+					lm.reindex();
+					JOptionPane.showMessageDialog(null, "The files has been reindexed!");
+	            }
+				
+	        }); 
+		bottom3.add(reindex);
+
+		
+		bottom.add(bottom1 , 0 , 0);
+		bottom.add(bottom2 , 1 , 0);
+		bottom.add(bottom3 , 2 , 0);
+
+		
 		f.add(bottom,BorderLayout.SOUTH);
+		
+		
 		
 	}
 	public static String suggest(String inputs) throws IOException{

@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 import org.apache.lucene.analysis.SimpleAnalyzer;
@@ -16,6 +17,7 @@ import org.apache.lucene.search.spell.PlainTextDictionary;
 import org.apache.lucene.search.spell.SpellChecker;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
+
 
 public class LiberaryManager {
 
@@ -28,7 +30,7 @@ public class LiberaryManager {
 	
 	// a string or a phrase
 	public void addString(String words) throws IOException{
-		String filename = words.trim() + System.currentTimeMillis() +".dic";
+		String filename = "dics/"+words.trim() + System.currentTimeMillis() +".dic";
 		File file =  new File(filename);
 		if(!file.exists()){
 			file.createNewFile();
@@ -54,7 +56,7 @@ public class LiberaryManager {
 	}
 
 	public void addDictDocument(String filename) throws IOException{
-		String filename1 = filename.trim() + System.currentTimeMillis() +".dic";
+		String filename1 = "dics/"+ filename.trim() + System.currentTimeMillis() +".dic";
 		File file =  new File(filename1);
 		if(!file.exists()){
 			file.createNewFile();
@@ -92,4 +94,27 @@ public class LiberaryManager {
 
 	}
 
+	public void reindex(){
+		com.emc.xplore.util.DirectoryUtil du = new com.emc.xplore.util.DirectoryUtil();
+        ArrayList<String> dul = du.getAllFilePath("dics");
+		for(int i = 0 ; i< dul.size(); i ++){
+			 try {
+			    	Dictionary d = new PlainTextDictionary(new FileReader( new File(dul.get(i) )));
+
+			    	//lucene 3.4
+//			    	IndexWriterConfig iw = new IndexWriterConfig(Version.LUCENE_34,new SimpleAnalyzer(Version.LUCENE_34));
+			    	//lucene 3.6
+			    	IndexWriterConfig iw = new IndexWriterConfig(Version.LUCENE_36,new SimpleAnalyzer(Version.LUCENE_36));
+			    	SpellChecker sc = new SpellChecker(FSDirectory.open(new File(StringLiberary.dictionaryPath )),new LevensteinDistance());
+
+					//lucene 3.4
+//					sc.indexDictionary( d );  
+			    	//lucene 3.6
+					sc.indexDictionary( d , iw,  true);  
+			 } catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+			 }	
+		}
+	}
 }

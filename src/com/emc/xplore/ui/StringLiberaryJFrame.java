@@ -1,10 +1,13 @@
 package com.emc.xplore.ui;
 
 import java.awt.BorderLayout;
+import java.awt.Button;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
@@ -17,8 +20,10 @@ import java.util.Date;
 import java.util.List;
 
 import javax.swing.JButton;
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
@@ -37,6 +42,8 @@ import org.apache.lucene.search.suggest.jaspell.JaspellLookup;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
 
+import com.emc.xplore.liberary.LiberaryManager;
+
 public class StringLiberaryJFrame {
 
 	private static String indexpath = "MicroStringsDict.txt";
@@ -44,7 +51,7 @@ public class StringLiberaryJFrame {
 	public static void main(String[] args){
 		final JFrame f = new JFrame("Spell Checker");
 		f.setVisible(true);
-		f.setSize(500, 400);
+		f.setSize(800, 600);
 		f.setLocation(400,200);
 		f.setLayout(new BorderLayout());
 		Container top = new Container();
@@ -140,6 +147,106 @@ public class StringLiberaryJFrame {
 				
 		    }
 		});
+		
+		//new Container for Liberary Management
+		Container bottom = new Container();
+		
+		bottom.setLayout(new GridLayout(2,1));
+
+		
+		Container bottom1 = new Container();
+		bottom1.setLayout(new FlowLayout());
+
+		JLabel word = new JLabel("new String: ");
+		bottom1.add(word);
+		final JTextField jt1 = new JTextField("has been deleted");
+		jt1.setColumns(30);
+		bottom1.add(jt1);
+		
+		final LiberaryManager lm = new LiberaryManager();
+
+		Button add = new Button("Add to Liberary");
+		bottom1.add(add);
+		add.setVisible(true);
+		bottom1.setVisible(true);
+		
+		add.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				try {
+					lm.addString(jt1.getText().trim());
+					JOptionPane.showMessageDialog(null, "'"+jt1.getText() + "' is added to the liberary.");
+				} catch (IOException e) {
+					JOptionPane.showMessageDialog(null, "error");
+				}
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+		});
+
+
+		Container bottom2 = new Container();
+		bottom2.setLayout(new FlowLayout());
+
+		JLabel dict = new JLabel("new Document: ");
+		bottom2.add(dict);
+	    final JTextArea ta = new JTextArea("          ");
+	    JButton brow = new JButton("Choose Dict File");
+	    brow.addActionListener(new ActionListener()  
+        {  
+			@Override
+            public void actionPerformed(ActionEvent ae)  
+            {  
+				JFileChooser fDialog = new JFileChooser();
+				int result=fDialog.showOpenDialog(f);
+				if(result==JFileChooser.APPROVE_OPTION){
+					String fname=fDialog.getSelectedFile().getAbsolutePath();
+					f.setTitle(fname);
+					ta.setText(fname);
+					f.repaint();
+				}else{
+				}
+            }
+			
+        }); 
+	    bottom2.add(ta);
+	    bottom2.add(brow);
+		
+
+		Button add2 = new Button("Add to Liberary");
+		bottom2.add(add2);
+		add.setVisible(true);
+		bottom2.setVisible(true);
+		
+		bottom.add(bottom1 , 0 , 0);
+		bottom.add(bottom2 , 1 , 1);
+
+		f.add(bottom,BorderLayout.SOUTH);
+		
 	}
 	public static String suggest(String inputs) throws IOException{
 		String autoComplete = "";

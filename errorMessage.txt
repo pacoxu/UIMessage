@@ -1,0 +1,498 @@
+﻿Error Message
+Failed to retrieve repository list from connection broker. Installer will assume no repositories are available.
+Failed to delete '{0}'.
+Deployment of WebApps failed.
+Failed to remove {0}.
+Failed to {0}  Java Method Server repository objects. You may {0}  these objects later using Documentum Administrator
+dm_jms_admin failed. Check the dm_jms_admin output at '{0}' for errors.
+No repositories are available.
+Please check the connection broker host or port are correct.
+Cannot validate username and password. No repositories are available.
+Incorrect username or password. Cannot connect to repository '{0}' with the supplied username and password.
+Failed to initialize DFC for installer.
+Failed to retrieve dfc.properties from jmsWebApps.jar. Check that you have packaged jmsWebApps.jar as described in the installation guide.
+Packaging failed! 
+Failed to create file '{0}'.
+Failed to update webapp files.
+Failed to rename '{0}' to '{0}'.
+Cannot package file '{0}'. The file does not exist.
+The user password cannot be empty.
+Invalid password. Please enter valid your password.
+The path format is not right
+The installer failed to execute the {0}  script. For more information, please read output file: {1}.
+Failed to add jvm information to {0} . Please manually modify it before running dardeployer.
+Failed to rename {0}. Please replace it with {1} manually.
+Failed to install {0}.
+failed to encrypt ACS jmx admin password.
+Failed to stop existing Method Server instance, but the installation continues.
+Failed to stop existing Method Server instance: {0}. But the installation continues.
+Failed to update docbroker properties in dfc.properties: {0}
+Failed to check DMS instance exists
+The installer failed to load file: {0}
+The installer is failed to create DMS schema: {0}
+The installer failed to load file: {0}
+The installer is failed to create DMS schema: {0}
+The installer failed to load file: {0}
+The installer is failed to create DMS schema: {0}
+The installer failed to load file: {0}
+Failed to delete DMS instance {0}
+Failed to get existing database user's password
+Failed to get existing global registry user's password
+Failed to get user dmsAdmin's password
+failed to encrypt DMS password.
+Failed to connect to DMS database. Do you want to continue to install DMS? Click Yes to continue, click NO to re-enter DMS database infomation.
+Failed to verify  DMS schema: Do you want to continue to install DMS? Click Yes to continue, click NO to re-enter DMS database infomation.
+The format of JDBC URI is not correct: {0}
+The installer failed to update registry for repository {0}. Please check that you have adequate permissions to update the registry key. Error:  {1}
+Repository could not connect to the database. Detailed error: {0}
+Fail to open file {0}.
+Failed to fetch files from primary server. Please refer {0} for more information.
+The installer failed to update registry for connection broker {0}. Please check that you have adequate permissions to update the registry key. Error:  {1}
+The installer failed to read registry key  SOFTWARE\Documentum\DOCBROKERS. Error: {0}
+The installer failed to read registry key  SOFTWARE\Documentum\DOCBASES. Error: {0}
+Environment variable {0} does not exist in the current environment. Please follow the pre-install instructions and try again.
+Failed to copy the certification files.
+Failed to register repository as global registry in dfc.properties
+Invalid connection broker port number. Please enter an integer for the port number.
+Invalid connection broker  host machine. Check that connectivity exists between this machine and the  connection broker  host machine.
+connection broker  connectivity test failed. Please make sure that the connection broker is running and host and port information is correct.
+Username field should not be empty.
+The domain name filed is not valid.
+Password field should not be empty.
+The User Name does not have the required permissions of SysAdmin or greater.
+Invalid connection broker port number. Please enter an integer for the port number.
+Invalid connection broker  host machine. Check that connectivity exists between this machine and the  connection broker  host machine.
+connection broker  connectivity test failed. Please make sure that the connection broker is running and host and port information is correct.
+Service name should not be empty.
+Failed to verify service name: {0}
+The service name {0} already exist. Please enter unique name.
+The install has detected native service entry: {0}  at port: {1}  and secure service entry: {2} at port: {3}, but they are not using consecutive port numbers.
+The installer did not find native service entry: {0}.
+The installer did not find secure service entry: {0}.
+The installer has detected native service entry: {0}  at port: {1}. But the port number must be larger than 1024.
+The installer has detected secure service entry: {0}  at port: {1}. But the port number must be larger than 1024.
+Invalid connection broker name. Please enter numeric characters only for connection broker name.
+Invalid connection broker port. Please enter an integer for connection broker port.
+There is already a  connection broker created with the same name.
+Another process is already using that port. Please enter a different port.
+Invalid connection broker  name. It must contain only the following characters: A-Z, a-z and 0-9.
+Two consecutive ports starting at {0} need to be reserved for this connection broker. Port {1}  is used by another process. Please enter a different port.
+Client certificate file can not be found.
+The "p12" extension name of Client certificate file is required.
+{0} is(are) required.
+Username field should not be empty.
+The domain name filed is not valid.
+Password field should not be empty.
+The specified repository user is not a admin user
+Failed to get content-file server information:  {0}
+failed to obtain computer name: {0}
+Could not extract {0}  info. File does not exist: {1}
+Fail to create directory {0}.
+failed to create instance for {0}: {1}
+failed to deploy {0}: {1}
+Failed to install Jboss. 
+failed to get file from resource for {0}
+failed to get resolve file {0}
+No JBoss installer is available for your OS platform.
+Jboss installation failed due to a fatal error: {0}
+file not resolved: {0}
+Failed to install {0}
+Fail to delete directory {0}. Please manually delete this directory after exit the installation.
+Failed to determine if  {0}  exists, return false. 
+Error loading {0}
+Invalid port number. Please enter an integer greater than 1024.
+The values in the password fields do not match. Please enter the desired password into both password fields.
+The value in the {0}  field is not valid, please enter a valid value.
+Total {0} consecutive ports need to be reserved starting at the value you entered.  The value you entered for Listen Port, {1}, is not valid, since it is found port {2}  is not available. Please enter a valid value for the Listen Port.
+file not resolved: {0} does not exist
+Failed to start {0} instance. After exit the installation, please manually start {1} by running {2}
+Timeout for stopping instance {3}
+Failed to start server instance for {0}. Check {1} for details.
+Could not confirm the {0} instance is in running mode. Please check {1}  after exiting the installation. You may need to manually start the server instance.
+Jboss command failed. No stdout or errout stream was returned from command:  {0}
+failed to retrieve authentication string for the jboss instance: {0}. Please check {0}  for details.
+Failed to encrypt password. Please refer to {0}  for more details.
+Failed to create encrypted db password. See {0}  for more details.
+Failed to obtain list of application server instances. Will assume no instances exist.
+Special characters {0}, are not allowed in admin password.
+Could not extract {0}  info. File does not exist: {1}
+Unable to write file: {0}
+Failed to backup file:  illegal argument, file cannot be null.
+Failed to backup file: {0} does not exist.
+Failed to backup file: {0} is not a file.
+Failed to backup file: {0}  - current user may lack adequate security access privileges.
+Unable to write file: {0}
+Failed to backup file:  illegal argument, file cannot be null.
+Failed to backup file: {0} does not exist.
+Failed to backup file: {0} is not a file.
+Failed to backup file: {0}  - current user may lack adequate security access privileges.
+File does not exist: 
+Could not locate expected file: {0}
+dfc.properties not found: {0}
+Source file could not be located at: {0}
+Error during copy: {0}
+failed to obtain computer name:{0}
+Failed to determine if {0} is a local host. Return false.
+Runtime execution failed with child process " {0} " exit code of {1}
+Failed to create temporary file '{0}' in directory '{1}'.
+Failed to create temporary directory '{0}'.
+File does not exist: 
+Do not have permissions to write to: {0}
+Error during copy: {0}
+Failed to register {0}: {1}
+ERROR Un-registering {0}:{1}
+Registration was not performed for {0} because the file was not found.
+Failed to execute chmod {0}
+Failed to get canonical path for file {0}
+Failed to set permission for file {0} because the file was not found.
+Failed to add {0} to the manifest of {1}: {2}
+{0}  was not added to the manifest of {1} because the file was not found.
+User does not have permission to create target path: {0}
+User does not have permission to update classpath manifest in jar at: {0}
+Unable to read the contents of: {0}
+Unable to parse the {0} attribute from: {1}
+Unable to parse the new entries passed as 'entries' parameter.
+Macro resolution was not performed on {0} because the file was not found.
+Failed to extract {0} to {1}: {2}
+Failed to create directory {0}: {1}
+Failed to copy {0} to {1}: {2}
+Setup was unable to connect to the FS2 Server: {0}  on RMI Port: {1}.
+dfc.properties does not exist at expected location: {0}.
+The Password for user acsAdmin field is empty. Please enter a valid value.
+The Confirm password field is empty.Please enter a valid value.
+The values in the password fields do not match. Please enter the desired password into both password fields.
+Host IP field should not be blank.
+Format of Host IP is wrong.
+Admin user password should not be blank.
+The values in the password fields do not match. Please enter the desired password into both password fields.
+Invalid port number. Please enter an integer greater than 1024.
+Total {0} consecutive ports need to be reserved starting at the value you entered. The value you entered for Listen Port {1} is not valid, since it is found port {3} is not available. Please enter a valid value for the Listen Port.
+Database administrator password must not be blank. Please create an administrator user with a vallid password.
+Invalid database administrator name or password. Please enter database administrator name and password.
+Invalid database user password. Valid database user password rules are:
+1. Must contain only ASCII alphanumeric characters,\'.\', \'_\' and \'-\'.
+Please enter valid database user password.";
+Invalid data source. Please select one data source or create.
+Invalid database user name. Valid database user name rules are:
+1. Must be less than 33 characters in length.
+2. First letter must be a letter.
+3. Must contain only ASCII alphanumeric characters, \'_\' and \'-\'.
+Please enter valid database user name.
+Invalid database user password. Valid database user password rules are:
+1. Must contain only ASCII alphanumeric characters,\'.\', \'_\' and \'-\'.
+Please enter valid database user password.
+Database administrator password must not be blank. Please create an administrator user with a vallid password.
+Invalid password length. It should have {0} or more characters.
+confirmation of database user password failed. Please re-enter database user password.
+Invalid database administrator name or password. Please enter database administrator name and password.
+
+Failed to connect to the database server successfully. Likely causes are:
+1. The connection string is not valid.\n" +
+2. The database server is not running.\n" +
+3. The {0} owner account failed to connect to the database server.
+
+Failed to find the database server host machine successfully. Check that connectivity exists between this machine and the database server host machine.
+
+Invalid database user name. Valid database user name rules are:
+1. Must be less than 33 characters in length.
+2. First letter must be a letter.
+3. Must contain only ASCII alphanumeric characters, \'_\' and \'-\'.
+Please enter valid database user name.
+
+Invalid database user password. Valid database user password rules are:
+1. Must contain only ASCII alphanumeric characters,\'.\', \'_\' and \'-\'.
+Please enter valid database user password.";
+
+The SMTP Server Name field must not be empty.
+The installation owner\'s email address must not be empty.
+Invalid format of the email address.
+The SMTP Server '{0}' could not be found.
+Fail to connect to the SMTP service (port 25) on the specified machine. It could be that the service does not exist or the service is not running. Click Yes to ignore this error,otherwise Click No to specify another SMTP server.
+
+Repository name should not be empty.
+First character of repository name must be a letter.
+The length of repository name must be less than 32 characters.
+Repository name only can contain characters: A-Z, a-z, 0-9, underscore(_) and dot(.)
+Repository with name '{0}' aleardy exists.
+The port number {0} must be larger than 1024.
+The port, {0}, for native service is used by another process.
+Port, {0}, for secure service is used by another process.
+
+Repository name should not be empty.
+First character of repository name must be a letter.
+The length of repository name must be less than 32 characters.
+Repository name only can contain characters: A-Z, a-z, 0-9, underscore(_) and dot(.)
+Repository with name '{0}' aleardy exists.
+The port number {0} must be larger than 1024.
+The port, {0}, for native service is used by another process.
+Port, {0}, for secure service is used by another process.
+
+{0} is(are) required.
+The client certificates file path format is not right
+The root certificates file path format is not right
+Format of RKM host is wrong.
+The port should be numeric
+Trusted root certificate file can not be found.
+The "pem" extension name of trusted root certificate file is required.
+Client certificate file can not be found.
+The "p12" extension name of Client certificate file is required.
+
+This component does not currently exist.Please select Create new.
+Are you sure you want to {0} name ? Click Yes to continue, otherwise Click No.
+
+You path format is not correct!
+Please enter a path for your selected path type
+Installation owner does not have permissions to write to this directory. Please enter a different directory or modify the existing directory permissions.
+Installation owner does not have permissions to create this directory. Please enter a different directory or modify the existing directory permissions.
+
+
+
+You path format is not correct!
+Installation owner does not have permissions to write to this directory. Please enter a different directory or modify the existing directory permissions.
+Installation owner does not have permissions to create this directory. Please enter a different directory or modify the existing directory permissions.
+
+
+The installer failed to verify password for user {0}. Please verify that the password is correct.
+The password cannot be empty.
+The installation program will not run the script, /opt/documentum/dba/dm_root_task. A Linux administrator, logged in as the root user, must run the script before configuring a repository.
+The installer failed to verify password for user:{0}. Please verify that the password is correct.
+The installer failed to verify password for root . Please verify that the password is correct.
+
+The path format is not right
+The directory entered does not exist on the machine.
+
+Invalid port number. Please enter an integer for the port number.
+secure port should be:{0}
+
+The installer will modify the service file as follow:
+Remove service {0} on port {1}
+Add service {0} on port {2}
+Add service {0}_s on port {3}
+Click OK to proceed, click CANCEL to go back to previous screen.
+
+Data tablespace is already created, please indicate different tablespace name.
+Index tablespace is already created, please indicate different tablespace name.
+
+Invalid tablepsace name. Valid tablespace name rules are:
+1. Must contain only the following characters: {0}
+2. Must be 18 characters or less.
+3. First character must be a letter.
+
+Invalid tablespace name. Valid tablespace name rules are:
+1. Must contain only the following characters: 
+2. Must be 30 characters or less.
+3. First character must be a letter.
+
+
+The following value is invalid or empty: Destination directory
+The name of the Documentum installation directory cannot contain spaces or any of the following characters: {0}
+Documentum installers do not support installing to root directories. Please specify a valid directory.
+The specified directory is a file, and not a directory.Please specify a valid directory.
+Installation owner does not have permissions to write to this directory. Please enter a different directory or modify the existing directory permissions.
+Installation owner does not have permissions to create this directory. Please enter a different directory or modify the existing directory permissions.
+The current user account does not have write permission on {0}
+The path format is not right
+The following value is invalid or empty: The file system,{0}, should have {1} GB but it has ({2} GB only.
+
+This component does not currently exist.Please select Create new.
+
+
+
+
+Invalid system file path. Please specify a valid file path.
+Invalid file size. Please enter numeric values only for file size.
+Database host name cannot be empty.
+Database port cannot be empty.
+Database name cannot be empty.
+Repository user name cannot be empty.
+SID cannot be empty.
+The password field is empty. Please enter a valid value.
+Invalid database listener port number. Please enter an integer for the port number.
+The Repository field is empty. Please enter a valid value.
+The User Name field is empty. Please enter a valid value.
+The User Password field is empty. Please enter a valid value.Please enter a different directory or modify the existing directory permissions.
+Global registry connection information is required. If you cannot provide that information at this time, please enable a global registry at a later time
+Failed to modify dfc.properties. {0}
+The specified user has System Administrator privileges. You should limit the access rights of this user to READ permission on the /System/Modules folder in the repository. Click Yes to continue, otherwise click No to specify another user.
+The repository is not a version that can be set as a Global Registry. Please enter a Repository that is version 5.3 or later.
+
+The specified user does not have access to the /System/Modules folder in the repository. If this is the appropriate user, you will need to change privileges to provide READ permission after this installation. 
+Click Yes to continue, otherwise Click No.
+
+The specified user has VERSION permissions or higher on the /System/Modules folder in the repository. You should limit the access rights of this user to READ permission on the /System/Modules folder in the repository." +
+Please click No to change the user or Yes to proceed with the existing entry.
+
+The specified user does not have READ privileges on the /System/Modules folder in the repository. If this is the appropriate user, you will need to change privileges to provide READ permission after this installation. 
+Please click No if you want to change the user or Yes to proceed with the existing entry.
+
+You must select at least one Repository
+Invalid {0} host machine. Check that connectivity exists between this machine and the {0} host machine.
+Invalid {0} port number. Please enter an integer for the port number.
+
+
+Invalid DiServerStaticClass.DOCBROKER_LABEL name. It must contain only the following characters: A-Z, a-z and 0-9.
+
+
+
+
+
+The script failed. You must select "Retry the failed script", or select "Previous" to modify the script information.
+Installation owner does not have permissions to write to this directory. Please enter a different directory or modify the existing directory permissions.
+Installation owner does not have permissions to create this directory.  Please enter a different directory or modify the existing directory permissions.
+Fail to reach the computer with the FQDN {0} . Check the value you specified. Click Yes to ignore this error, or click No to re-enter the FQDN.
+The FQDN field must not be empty.
+The User Login Name field is empty. Please enter a valid value.
+The User Login Name cannot exceed length of {0} characters. Please enter a valid value.
+The User Login Name is already assigned to a user in the repository. Please enter a unique name.
+The User Password field is empty. Please enter a valid value.
+The User Password cannot exceed length of MAXIMUM_USER_PASSWORD_LENGTH characters. Please enter a valid value.
+The SERVER, GLOBAL_REGISTRY_OPTION_SELECTED value of '' in your configuration file is not valid. It must be exactly DiServerDataStore.USE_THIS_REPOSITORY, DiServerDataStore.SPECIFY_DIFFERENT_REPOSITORY or DiServerDataStore.DO_LATER.
+Global registry connection information is required. If you cannot provide that information at this time, use the Help button to obtain instructions for enabling a global registry at a later timeGlobal registry connection information is required. If you cannot provide that information at this time, use the Help button to obtain instructions for enabling a global registry at a later time
+Invalid DiServerStaticClass.DOCBROKER_LABEL host machine. Check that connectivity exists between this machine and the DiServerStaticClass.DOCBROKER_LABEL host machine.
+Invalid DiServerStaticClass.DOCBROKER_LABEL port number. Please enter an integer for the port number.
+The repository is not a version that can be set as a Global Registry. Please enter a Repository that is version 5.3 or later.
+
+The specified user has System Administrator privileges. You should limit the access rights of this user to READ permission on the /System/Modules folder in the repository.
+Please click Cancel to change the user or Continue to proceed with the existing entry.
+
+The specified user has VERSION permissions or higher on the /System/Modules folder in the repository. You should limit the access rights of this user to READ permission on the /System/Modules folder in the repository."
+Please click Cancel to change the user or Continue to proceed with the existing entry.Global registry connection information is required. If you cannot provide that information at this time, use the Help button to obtain instructions for enabling a global registry at a later timeGlobal registry connection information is required. If you cannot provide that information at this time, use the Help button to obtain instructions for enabling a global registry at a later time
+
+
+
+
+Please enter the keystore password.
+The keystore password entered is not correct.
+
+
+Invalid DiServerStaticClass.DOCBROKER_LABEL host machine. Check that connectivity exists between this machine and the DiServerStaticClass.DOCBROKER_LABEL host machine.
+Invalid DiServerStaticClass.DOCBROKER_LABEL port number. Please enter an integer for the port number.
+DiServerStaticClass.DOCBROKER_LABEL connectivity test failed. Please make sure that the DiServerStaticClass.DOCBROKER_LABEL is running and host and port information is correct.
+This component does not currently exist.Please select Create new.
+Are you sure you want to {0} name? Click Yes to continue, otherwise Click No.
+None of component types are selected. Please select at least one component type.
+
+This component does not currently exist. Please select Create new.
+Are you sure you want to {0} name? Click Yes to continue, otherwise Click No.
+Invalid xDB host machine. Check that connectivity exists between this machine and the xDB host machine.
+Invalid xDB port number. Please enter an integer for the port number.
+Failed while testing connection to external xDB. Please make sure the external xDB server information is correct. Please check the logFile.getAbsolutePath() for details.
+
+
+
+Invalid system file path. Please specify a valid file path.
+Invalid file size. Please enter numeric values only for file size.
+Indicate the size of the data device segment and log device segment for the DiServerStaticClass.DOCBASE_LABEL. Ensure that there is sufficient free space on the devices.
+The path format is not right
+The following value is empty: XML Store Directory Location
+
+
+Executing custom code
+Checking the features for docbase
+Invalide docbase name.
+Invalide user name.
+WARNING: The DM_HOME environment variable points to version {0}. This means we will overwrite the installation located in {1}. If you don't wish to overwrite this installation we recommend you correct the value of the DM_HOME environment variable and re-start the installation.
+IMPORTANT: After installation, you MUST run $DM_HOME/bin/dm_set_server_env.sh script before executing any Documentum Server tool, such as iapi, dql, etc.
+You have started the Server Configuration Program directly from the executable. Click Continue to proceed using your manually set enviroment or click Cancel to quit and then restart using the dm_launch_server_config_program.sh script.  Click Yes to continue, Click NO to exit from the installer.
+
+The following value is invalid or empty:
+The file system {0} should have 4 GB, but it has {1} GB only.
+Checking the Keystore status
+The installer has detected that the keystore does not exist, the repository configuration process can not proceed.
+Installer failed to check keystore status with command . Detail error information:
+Check or change the XDB superuser password
+
+The installer has detected that the local machine has a newer version of the server already installed. Installation cannot continue.
+The server version you are installing is already on the local machine. Do you want to reinstall the software?
+Before you continue, stop all repositories and connection brokers and Java Method Server instance, then click Yes to reinstall or No to exit from the installer.
+An older server version is already on the local machine. Do you want to upgrade the software? 
+ERROR: Exception occurred while setting the existing BOF Registry User restricted folders.
+ERROR: Exception occurred while creating the BOF Registry User.
+ERROR: Exception occurred while setting the Global Registry properties in dfc.properties.
+The current docbase contains old BOCS config objects. The objects have been dumped to {0} and then deleted.
+The installer failed to delete keystore file:
+Installer failed to create keystore. Detail error information:{0}
+The installer failed to read file: 
+Errors occured while removing content files:
+The installer failed to execute the dm_jms_config_setup_for_xml_store.ebs script. For more information, please read output file: {0}
+Fail to execute the command:
+Failed to run script, please run dm_root_task as root manually before configure repository
+The application server listen port is not set.
+The login user name must be less than 33 characters. Please change your login user name.
+The installer has detected that you are installing on an uncertified platform:{0} (Professional Version), the installation may fail.
+Failed to gather information to configure webcache.ini.
+connection broker connectivity test failed. Please make sure that the connection broker is running and host and port information is correct.
+File {0} cannot be modified.
+Installation of DARs failed. See {0} for details.
+Unexpected errors occurred while installing DARs. This is not a fatal problem and the repository can be used. See {0} for details.
+he installer is failed to query tablespace name:{0}
+The installer failed to create file:{0} to query tablespace name. Error:{1}
+Could not to locate XML Store web.xml. Assuming XML Store webapp has not been deployed yet.
+Unable to register the {0} Administration URL. This operation required access to a 6.0 SP1 or later global registry. Please use Documentum Administrator to register the {1} Administration URL ({2}) when a suitable global registry is accessible.
+Failed to un-register docbase as global registry in dfc.properties
+Fail to open file {0}
+The installer failed to remove service entry from file {0} . Error:{1}
+The installer failed to retrieve operation system type information. Detailed error:{0}
+Failed to register repository as global registry in dfc.properties
+he installer failed to read file {0} . Error:{1}
+The installer is failed to verify SQL server pack:{0}
+The installer failed to create file: {0} to test database version. Error:
+The version of the selected database does not match server requirements.Please refer to the Release Notes for the required service pack version(8.00.194).
+The installer failed to read file:{0} .Error:{1}
+Fail to connect to the repository
+This is a fatal error and server configuration program will exit now.
+The installer is failed to test docbase ownership:{0}
+The docbase owner already has a docbase created in the selected database. Each docbase must have a unique owner.
+Database {0} is not case-sensitive, choose a case-sensitive database.
+SQLServer instance {0} is not case-sensitive, please select a case-sensitive SQLServer instance.
+The installer failed to delete run time server.ini file for directory {0}.
+The installer failed to update server.ini file at directory {0} . Error:{1}
+Can not find service File Path
+ Fail to open file {0}.
+The installer failed to find a valid port for service{0}.
+The installer failed to find two consecutive valid ports.
+You have provided port {0} , but either port{1} or port {2} is not available. 
+The installer failed to find two consecutive valid ports.
+The installer failed to read file:{0} .Error:{1}
+The installer failed to remove service entry from file{0}  .Error:{1}
+The installer has detected native service entry:{0} at port:{1} . But the port number must be larger than 1024.
+The installer did not find secure service entry:{0} for {1}.
+The installer has detected secure service entry:{0} at port:{1} . But the port number must be larger than 1024.
+The install has detected native service entry:{0} at port:{1} and secure service entry:{2} at port: {3} , but they are not using consecutive port numbers.
+File doesn't exist:{0}
+
+The installer failed to find file:{0} data_dictionary.ini
+Please specify at least one language support in the file {0} data_dictionary.ini.
+RKM server connection is not available.
+Failed to configure webcache.ini.
+The installer failed to delete file:{0}
+Server failed to create file:{0} . Error:{1}
+The installer failed to write to file:{0}.
+
+
+Installation of '{0}' DAR failed. See {1} ' for details
+Failed to extract internal installer resource.
+Minimum supported database version for {0} on {1} is unknown.
+Failed to load internal installer resource.
+User unable to create tables, view or index. Detailed error:{0}
+User could not connect to the selected database. Detailed error:{0}
+Failed to test database version. Detailed error:{0}
+Failed to test database version. Detailed error:{0}
+Docbase could not connect to the database. Detailed error:{0}
+You have requested to \"Enable Data Partitioning\" but this feature is not currently enabled in your database. In order to proceed please first enable data partitioning in the database and re-launch the program.
+The required 8K page size temporary tablespace does not exist. In order to proceed please first ask your database administrator to create one and then re-launch this program.
+Failed to execute script.
+The installer failed to read file:{0} . Error:{1}
+The installer failed to create file:{0}  to test get data file. Error:{1}
+Could not perform database connection test due to wrong test type
+Installation of '{0}' DAR failed. See {1} ' for details
+
+Failed to migrate legacy bootstrap file from '{0}' to '{1}'.
+Cannot migrate {0} from '{1}' to '{1}' . The destination file already exists.
+
+
+xDB superuser authentication failed.
+
+Your current xDB superuser password is the same at the Content Server installation owner password. Do you want to change the xDB superuser password?
+Authentication failed for xDB superuser password. Please re-enter current xDB superuser password.
+The current xDB superuser password is too short. Please enter a different xDB superuser password. Please note that this will change the xDB superuser password in your federation

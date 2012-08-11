@@ -1,0 +1,2 @@
+# Module uimessage
+# RPC service class, partial path of RPC policy file

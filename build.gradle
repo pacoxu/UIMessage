@@ -14,10 +14,11 @@ jar {
 	repositories {
 		flatDir(dirs: "lib") 
 	}
-	
 	dependencies  {
 		compile('org.apache.lucene:lucene-core:3.6.0')
 		compile('org.apache.lucene:lucene-spellchecker:3.6.0')
+		compile fileTree(dir: 'war/WEB-INF/lib', includes: ['*.jar'])
+
 	}
 
 configurations {
@@ -42,3 +43,20 @@ sourceSets {
         }
     }
 }
+
+task war(){
+	copy {
+
+		from 'build/classes/main/'
+
+		into  'war/WEB-INF/classes/'
+    }
+
+	
+}
+
+clean{
+	delete 'war/WEB-INF/classes/com'
+}
+war.dependsOn check
+test.dependsOn war

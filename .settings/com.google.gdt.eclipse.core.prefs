@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+jarsExcludedFromWebInfLib=C\:/task/task13-UI-message/UIMessage/lib/lucene-core-3.6.0.jar
+launchConfigExternalUrlPrefix=
+warSrcDir=war
+warSrcDirIsOutput=true
